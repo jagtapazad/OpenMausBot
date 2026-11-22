@@ -129,3 +129,8 @@ Teams' display-name rule. Copyright 2025-2026 Vexa.ai Inc. and the Vexa
 contributors, used under the Apache License, Version 2.0
 (third_party/vexa/LICENSE). The adapted parts were rewritten in our own code;
 no Vexa file is included unmodified.
+
+This fork (jagtapazad/OpenMausBot) adds Jaya under server/jaya/,
+src/components/jaya/ and related files, Copyright 2026 Azad Jagtap, under the
+same Apache License, Version 2.0. Files changed by the fork are marked as
+changed in the fork's git history.

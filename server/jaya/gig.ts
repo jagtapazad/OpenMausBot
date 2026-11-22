@@ -3,7 +3,7 @@
 // by the hour once the person accepts the result.
 import type { Deps } from "./orchestrator.ts";
 import { JayaStore } from "./store.ts";
-import { WorkPacketDraft, type Payout, type WorkPacket, type WorkSession } from "./domain.ts";
+import { WorkPacketDraft, type Payout, type WorkPacket, type WorkSession } from "../../shared/jaya.ts";
 
 export const DEFAULT_HOURLY_RATE = 18;
 export const RATE_RANGE = { min: 15, max: 20 } as const;

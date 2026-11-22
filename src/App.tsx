@@ -90,6 +90,7 @@ import { useSessionEnded } from "@/lib/session-ended";
 import { PairPage } from "./pair/PairPage";
 import { WebPanelPage } from "@/components/WebPanelPage";
 import { AppPreviewPanel } from "@/components/published-apps/AppPreviewPanel";
+import { JayaPage } from "@/components/jaya/JayaPage";
 import { FilePreviewPanel } from "@/components/FilePreviewPanel";
 import { refreshPublishedApps } from "@/lib/own-published-apps";
 import { serverFetch } from "@/lib/relay-server";
@@ -412,6 +413,8 @@ function Shell({ viewer }: { viewer: WelcomeViewer | null }) {
         <WebPanelPage />
       ) : state.activeView === "published-apps" ? (
         <PublishedAppsPage />
+      ) : state.activeView === "jaya" ? (
+        <JayaPage />
       ) : state.activeView === "announcements" ? (
         <AnnouncementsPage />
       ) : state.activeView === "team-files" && state.config?.team ? (

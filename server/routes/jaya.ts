@@ -2,7 +2,7 @@ import { z } from "zod";
 
 import { BrainRefused } from "../jaya/brain.ts";
 import { answerCheckIn, batchCheckIn, type Delivery } from "../jaya/checkins.ts";
-import type { Outcome } from "../jaya/domain.ts";
+import type { Outcome } from "../../shared/jaya.ts";
 import { claim, GigError, hoursWorked, registerWorker, startSession, stopSession, workerAct } from "../jaya/gig.ts";
 import { IntakeClosed, intakeTurn, startIntake } from "../jaya/intake.ts";
 import { launch, poll, type Deps } from "../jaya/orchestrator.ts";

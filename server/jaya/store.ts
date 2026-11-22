@@ -5,7 +5,7 @@ import { dirname } from "node:path";
 import { randomUUID } from "node:crypto";
 import { DatabaseSync } from "node:sqlite";
 
-import type { Attempt, CheckIn, Clarification, Engagement, Outcome, Payout, Worker, WorkerAction, WorkPacket, WorkSession } from "./domain.ts";
+import type { Attempt, CheckIn, Clarification, Engagement, Outcome, Payout, Worker, WorkerAction, WorkPacket, WorkSession } from "../../shared/jaya.ts";
 
 interface Kinds {
   engagements: Engagement;

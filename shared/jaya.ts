@@ -206,3 +206,30 @@ export interface Payout {
   status: "owed" | "paid";
   createdAt: string;
 }
+
+/** GET /api/jaya/engagements/:id */
+export interface EngagementView {
+  engagement: Engagement;
+  outcomes: Outcome[];
+  attempts: Attempt[];
+  checkins: CheckIn[];
+  packets: WorkPacket[];
+  actions: WorkerAction[];
+}
+
+/** GET /api/jaya/packets/:id */
+export interface PacketView {
+  packet: WorkPacket;
+  sessions: WorkSession[];
+  hours: number;
+  actions: WorkerAction[];
+  attempts: Attempt[];
+}
+
+/** GET /api/jaya/workers/:id */
+export interface WorkerView {
+  worker: Worker;
+  packets: WorkPacket[];
+  payouts: Payout[];
+  sessions: WorkSession[];
+}

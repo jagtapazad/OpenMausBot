@@ -2,7 +2,7 @@
 // outcomes precise enough to hand to agents. It works the same typed in the app or spoken on the phone.
 import type { Brain } from "./brain.ts";
 import { JayaStore } from "./store.ts";
-import { Brief, emptyBrief, IntakeTurn, type Engagement } from "./domain.ts";
+import { Brief, emptyBrief, IntakeTurn, type Engagement } from "../../shared/jaya.ts";
 
 export const OPENING = "Hi! I'm going to set up a small team of AI agents to get things done for you. To start: what outcomes are you looking for? Tell me in your own words, and I'll ask about the details.";
 

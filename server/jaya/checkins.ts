@@ -2,7 +2,7 @@
 // agent are merged into one short check-in, sent by text or call, and each answer goes back to the agents that asked.
 import type { Deps } from "./orchestrator.ts";
 import { JayaStore } from "./store.ts";
-import { CheckInDraft, type CheckIn } from "./domain.ts";
+import { CheckInDraft, type CheckIn } from "../../shared/jaya.ts";
 
 export const MAX_QUESTIONS = 6;
 

@@ -1,4 +1,4 @@
-import type { Schedule } from "./domain.ts";
+import type { Schedule } from "../../shared/jaya.ts";
 
 export interface HarnessBot {
   botId: string;

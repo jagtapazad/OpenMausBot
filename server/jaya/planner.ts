@@ -1,7 +1,7 @@
 // Turns the brief into a team: one agent per outcome, each with instructions, a schedule, a first message and a
 // clear hand-back, so the work can run on the harness without anyone in the loop.
 import type { Brain } from "./brain.ts";
-import { Plan, type Brief } from "./domain.ts";
+import { Plan, type Brief } from "../../shared/jaya.ts";
 
 export const QUESTION_TAG = "[QUESTION]";
 export const DELIVERABLE_TAG = "[DELIVERABLE]";

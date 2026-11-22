@@ -4,7 +4,7 @@
 // loopback (`openmausbot serve`). Department creation, memory writes and soul edits need admin scope.
 import { randomUUID } from "node:crypto";
 
-import type { Schedule } from "./domain.ts";
+import type { Schedule } from "../../shared/jaya.ts";
 import { QUESTION_TAG } from "./planner.ts";
 import type { Harness, HarnessBot, HarnessMessage } from "./harness.ts";
 

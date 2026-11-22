@@ -1,7 +1,7 @@
 // A brain that needs no API key, for clicking through the product: the intake asks a fixed run of questions and
 // builds the brief from the answers. Not a model; only a stand-in so nothing is spent while trying things out.
 import { scriptedBrain, type Brain } from "./brain.ts";
-import type { Brief, CheckInDraft, IntakeTurn, Plan, WorkPacketDraft } from "./domain.ts";
+import type { Brief, CheckInDraft, IntakeTurn, Plan, WorkPacketDraft } from "../../shared/jaya.ts";
 import { DELIVERABLE_TAG, QUESTION_TAG } from "./planner.ts";
 
 const QUESTIONS = [

@@ -1,7 +1,7 @@
 // The person judges each deliverable. A rejection goes back to the agent with their feedback; after too many, the
 // outcome is escalated to a gig worker. Accepting a worker's result settles their pay.
 import type { Deps } from "./orchestrator.ts";
-import type { Attempt, Outcome } from "./domain.ts";
+import type { Attempt, Outcome } from "../../shared/jaya.ts";
 import { createPacket, settle } from "./gig.ts";
 
 /** Rejections the agents get before a person steps in. */

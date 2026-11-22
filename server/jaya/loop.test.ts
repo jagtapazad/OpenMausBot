@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { scriptedBrain } from "./brain.ts";
 import { answerCheckIn, batchCheckIn } from "./checkins.ts";
 import { JayaStore } from "./store.ts";
-import type { Brief, OutcomeSpec, Plan } from "./domain.ts";
+import type { Brief, OutcomeSpec, Plan } from "../../shared/jaya.ts";
 import { claim, GigError, registerWorker, startSession, workerAct } from "./gig.ts";
 import { SimulatedHarness } from "./simulated-harness.ts";
 import { intakeTurn, OPENING, startIntake } from "./intake.ts";

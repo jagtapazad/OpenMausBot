@@ -2,7 +2,7 @@
 // turning its questions into check-ins and its deliverables into reviews.
 import type { Brain } from "./brain.ts";
 import { JayaStore } from "./store.ts";
-import type { Attempt, Clarification, Engagement, Outcome } from "./domain.ts";
+import type { Attempt, Clarification, Engagement, Outcome } from "../../shared/jaya.ts";
 import type { Harness } from "./harness.ts";
 import { DELIVERABLE_TAG, planTeam, QUESTION_TAG } from "./planner.ts";
 
